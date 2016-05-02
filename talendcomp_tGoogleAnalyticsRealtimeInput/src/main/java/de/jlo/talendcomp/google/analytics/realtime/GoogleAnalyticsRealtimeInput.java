@@ -642,7 +642,7 @@ public class GoogleAnalyticsRealtimeInput {
 		return requestedColumnNames;
 	}
 
-	private List<String> getColumnNames() {
+	public List<String> getColumnNames() {
 		List<ColumnHeaders> listHeaders = gaData.getColumnHeaders();
 		List<String> names = new ArrayList<String>();
 		int index = 0;
@@ -656,7 +656,7 @@ public class GoogleAnalyticsRealtimeInput {
 		return names;
 	}
 
-	private List<String> getColumnTypes() {
+	public List<String> getColumnTypes() {
 		List<ColumnHeaders> listHeaders = gaData.getColumnHeaders();
 		List<String> types = new ArrayList<String>();
 		for (ColumnHeaders ch : listHeaders) {
