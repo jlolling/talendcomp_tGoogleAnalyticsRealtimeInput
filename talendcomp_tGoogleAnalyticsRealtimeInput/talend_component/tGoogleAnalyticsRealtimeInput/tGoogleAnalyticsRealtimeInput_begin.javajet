@@ -220,7 +220,7 @@
 <%	int index = 0;
     if (listColumns != null && conn != null) {
         for (IMetadataColumn col : listColumns) {
-        String javaClassName = JavaTypesManager.getJavaTypeFromId(col.getTalendType()).getNullableClass().getName(); %>
+            String javaClassName = JavaTypesManager.getJavaTypeFromId(col.getTalendType()).getNullableClass().getName(); %>
 		// fill schema field <%=col.getLabel()%>
 		if (dataset_<%=cid%>.size() > <%=index%>) {
 			String <%=cid%>_value_<%=index%> = dataset_<%=cid%>.get(<%=index%>);
